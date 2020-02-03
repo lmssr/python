@@ -68,4 +68,4 @@
 # print np.concatenate((D, E), axis=1)
 
 def initialisation(m, n):
-
+  return
