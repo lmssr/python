@@ -67,10 +67,29 @@ import numpy as np
 
 # print np.concatenate((D, E), axis=1)
 
-def initialisation(m, n):
-  X = np.random.randn(m , n)
-  X = np.concatenate((X, np.ones((X.shape[0], 1))), axis = 1)
+# def initialisation(m, n):
+#   X = np.random.randn(m , n)
+#   X = np.concatenate((X, np.ones((X.shape[0], 1))), axis = 1)
 
-  return X
+#   return X
 
-print initialisation(12, 2)
+# print initialisation(12, 2)
+
+# INDEXING & SLICING
+
+A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+print  A
+print  A[0,:]
+print  A[0:2, 0:2]
+
+C =np.zeros((5, 5))
+
+C[::2, ::2] = 1
+print C
+
+from scipy import misc
+import matplotlib.pyplot as plt
+face = misc.face()
+plt.imshow(face)
+plt.show()
