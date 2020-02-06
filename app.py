@@ -79,7 +79,7 @@ import numpy as np
 
 A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-print  A
+print  np.mean(A)
 print  A[0,:]
 print  A[0:2, 0:2]
 
@@ -90,6 +90,6 @@ print C
 
 from scipy import misc
 import matplotlib.pyplot as plt
-face = misc.face()
-plt.imshow(face)
+face = misc.face(gray=True)
+plt.imshow(face, cmap=plt.cm.gray)
 plt.show()
