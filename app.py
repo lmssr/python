@@ -88,15 +88,15 @@ C =np.zeros((5, 5))
 C[::2, ::2] = 1
 print C
 
-from scipy import misc
-import matplotlib.pyplot as plt
-face = misc.face(gray=True)
-plt.imshow(face, cmap=plt.cm.gray)
-plt.show()
+# from scipy import misc
+# import matplotlib.pyplot as plt
+# face = misc.face(gray=True)
+# plt.imshow(face, cmap=plt.cm.gray)
+# plt.show()
 
-h = face.shape[0]
-w = face.shape[1]
-# zoom_face = face[h//4 : -h//4 , w//4 : -w//4]
-face = face[::2, ::2]
-plt.imshow(face, cmap=plt.cm.gray)
-plt.show()
+# h = face.shape[0]
+# w = face.shape[1]
+# # zoom_face = face[h//4 : -h//4 , w//4 : -w//4]
+# face = face[::2, ::2]
+# plt.imshow(face, cmap=plt.cm.gray)
+# plt.show()
