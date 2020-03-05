@@ -77,16 +77,16 @@ import numpy as np
 
 # INDEXING & SLICING
 
-A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+# A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-print  np.mean(A)
-print  A[0,:]
-print  A[0:2, 0:2]
+# print  np.mean(A)
+# print  A[0,:]
+# print  A[0:2, 0:2]
 
-C =np.zeros((5, 5))
+# C =np.zeros((5, 5))
 
-C[::2, ::2] = 1
-print C
+# C[::2, ::2] = 1
+# print C
 
 # from scipy import misc
 # import matplotlib.pyplot as plt
@@ -100,3 +100,11 @@ print C
 # face = face[::2, ::2]
 # plt.imshow(face, cmap=plt.cm.gray)
 # plt.show()
+
+A = np.random.randn(5, 5)
+A[0, 2] = np.nan
+B = np.corrcoef(A)
+C = np.unique(A)
+print A
+print B
+print C
